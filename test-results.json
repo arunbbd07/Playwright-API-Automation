@@ -1,0 +1,141 @@
+{
+  "config": {
+    "configFile": "C:\\Arun\\Interview\\Playwright-API-Automation\\playwright.config.ts",
+    "rootDir": "C:/Arun/Interview/Playwright-API-Automation",
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report\\2024-10-24T16-50-23-382Z"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Arun/Interview/Playwright-API-Automation/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "C:/Arun/Interview/Playwright-API-Automation",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.45.3",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "src\\tests\\testHome.spec.ts",
+      "file": "src/tests/testHome.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Home Page API Tests",
+          "file": "src/tests/testHome.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Create home page data for object",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 1018,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Map(2) {\n  \u001b[32m'name'\u001b[39m => \u001b[32m\"Arun's laptop\"\u001b[39m,\n  \u001b[32m'data'\u001b[39m => Map(4) {\n    \u001b[32m'year'\u001b[39m => \u001b[32m'2024'\u001b[39m,\n    \u001b[32m'price'\u001b[39m => \u001b[32m'$50000'\u001b[39m,\n    \u001b[32m'CPU model'\u001b[39m => \u001b[32m'Intel Core i9'\u001b[39m,\n    \u001b[32m'Hard disk size'\u001b[39m => \u001b[32m'1 TB'\u001b[39m\n  }\n}\n"
+                        },
+                        {
+                          "text": "2024-10-24T17:04:50.827Z [info]: POST request to /objects with data: {\"name\":\"Arun's laptop\",\"data\":\"{\\\"year\\\":\\\"2024\\\",\\\"price\\\":\\\"$50000\\\",\\\"CPU model\\\":\\\"Intel Core i9\\\",\\\"Hard disk size\\\":\\\"1 TB\\\"}\"}\r\n"
+                        },
+                        {
+                          "text": "{\"id\":\"ff80818192925da70192bf7cfba96bca\",\"name\":\"Arun's laptop\",\"createdAt\":\"2024-10-24T17:04:52.138+00:00\",\"data\":\"{\\\"year\\\":\\\"2024\\\",\\\"price\\\":\\\"$50000\\\",\\\"CPU model\\\":\\\"Intel Core i9\\\",\\\"Hard disk size\\\":\\\"1 TB\\\"}\"}\n"
+                        },
+                        {
+                          "text": "{\"year\":\"2024\",\"price\":\"$50000\",\"CPU model\":\"Intel Core i9\",\"Hard disk size\":\"1 TB\"}\n"
+                        },
+                        {
+                          "text": "2024\n"
+                        },
+                        {
+                          "text": "Arun's laptop\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2024-10-24T17:04:50.722Z",
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ac91e57867ab3245c12c-92a6c1e6a5e2120664d9",
+              "file": "src/tests/testHome.spec.ts",
+              "line": 22,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-10-24T17:04:47.255Z",
+    "duration": 4619.27899999998,
+    "expected": 1,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

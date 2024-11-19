@@ -1,0 +1,20 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs/
+*.log
+
+
+# Playwright reports and results
+playwright-report/
+test-results/
+trace.zip
+*.trace
+
+# Environment variables
+.env
+
+# dotenv environment variables file
+.env.qa
+.env.uat
